@@ -1,0 +1,518 @@
+<!--
+ * @Author: hhhhhq
+ * @Date: 2020-07-02 09:45:36
+ * @LastEditors: hhhhhq
+ * @LastEditTime: 2020-07-03 15:40:29
+ * @Description: file content
+--> 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>landingPage</title>
+    <style>
+      .btn {
+        border-width: 2px;
+      }
+
+      .form-control {
+        border-width: 2px;
+      }
+
+      a {
+        color: white;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #ccc;
+      }
+
+      .header-carousel-header {
+        height: 450px;
+      } 
+      .bg-cover {
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, .3);
+      }
+
+      .dropdown-item {
+        color: #fff;
+      }
+      .dropdown-item:hover {
+        background-color: #666;
+        color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        .intro {
+          margin-bottom: 5em;
+        }
+        .text-md-spacingTop {
+          margin-top: 1em;
+        }
+      }
+
+      @media(min-width: 768px) {
+        .text-md-dark {
+          color: #333; 
+        }
+        .text-md-spacingTop {
+          margin-top: 5em;
+        }
+      }
+    </style>
+  </head>
+    <body>
+      <!-- 最顶部 -->
+      <div class="bg-secondary py-1">
+        <div class="container text-right ">
+          <a href="#" class="text-link ">
+            <i class="fa fa-weibo"></i>
+          </a>
+          <a href="#" class="text-link ml-2">
+            <i class="fa fa-weixin"></i>
+          </a>
+          <a href="#" class="text-link ml-2">
+            <i class="fa fa-qq"></i>
+          </a>
+        </div>
+      </div>
+      <!-- navBar -->
+      <div class="navBar sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#">建中西餐厅</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">首页</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+                    美味菜单
+                  </a>
+                  <div class="dropdown-menu bg-dark">
+                    <a class="dropdown-item" href="#">蔬果口味</a>
+                    <a class="dropdown-item" href="#">没肉不舒服</a>
+                    <a class="dropdown-item" href="#">调味酱</a>
+                  </div>
+                </li>
+              </ul>
+
+              <form class="form-inline ml-auto">
+                <a href="#" class="btn btn-outline-primary mr-2 btn-sm" data-toggle="modal" data-target="#login">登入</a>
+                <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#register">注册</a>
+              </form>
+            </div>
+          </div>
+          
+        </nav>
+      </div>
+
+      <!-- carousel -->
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item header-carousel-header bg-cover active" style="background-image: url(./landingImg/carousel1.jpeg);">
+            <div class="carousel-caption d-none d-md-block px-3">
+              <h3>一個人，田野間的輕鬆美味</h3>
+              <p>城小中假上問，洲元化究變快歡專，臺正機上色從多空放我。來來中的來落行間我海府子成隨上事女，的石在朋經以定空他；級病期他，會性前集一於得當院應對分！意斯能己水成神錢。</p>
+            </div>
+          </div>
+          <div class="carousel-item header-carousel-header bg-cover" style="background-image: url(./landingImg/carousel2.jpeg);">
+            <div class="carousel-caption d-none d-md-block px-3">
+              <h3>一個人，田野間的輕鬆美味</h3>
+              <p>城小中假上問，洲元化究變快歡專，臺正機上色從多空放我。來來中的來落行間我海府子成隨上事女，的石在朋經以定空他；級病期他，會性前集一於得當院應對分！意斯能己水成神錢。</p>
+            </div>
+          </div>
+          <div class="carousel-item header-carousel-header bg-cover" style="background-image: url(./landingImg/carousel3.jpeg);">
+            <div class="carousel-caption d-none d-md-block px-3">
+              <h3>一個人，田野間的輕鬆美味</h3>
+              <p>城小中假上問，洲元化究變快歡專，臺正機上色從多空放我。來來中的來落行間我海府子成隨上事女，的石在朋經以定空他；級病期他，會性前集一於得當院應對分！意斯能己水成神錢。</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      </header>
+
+      <!-- section部分1 -->
+      <section class="py-5 bg-info text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 intro">
+              <div class="mb-2"><i class="fa fa-users fa-3x"></i></div>
+              <h3>忘卻不了的莓果香</h3>
+              <p>沒有遺憾的愛過、支持過他們，在商言商，他們總是假設：喔，但相信我。可是已經晚了……請你以後不要在我面前說英文了。</p>
+            </div>
+            <div class="col-md-4 intro">
+              <div class="mb-2"><i class="fa fa-users fa-3x"></i></div>
+              <h3>積沈在心中的漣漪</h3>
+              <p>但是當有機會時，但因為你是誠實且對此公平的，雪季可以延續4個月甚至5個月。摩挲著你的顏面，至少你不能完全抱怨荊棘，假如我在萬里外接到你的死耗，小馬，裝一個農夫，可以恣嘗鮮味。</p>
+            </div>
+            <div class="col-md-4 intro">
+              <div class="mb-2"><i class="fa fa-users fa-3x"></i></div>
+              <h3>放不下的體脂肪</h3>
+              <p>那就結婚吧我沒有妳會死，什麼都別說了，我什麼都不要，但我可以肯定地告訴你，前世的五百次回眸，沒有妳我的人生沒有意義。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section部分2 -->
+      <section class="container-fluid py-5 bg-light text-white" style="position: relative;">
+        <div class="row">
+           <div class="col-md-5 bg-cover" style="position: absolute; top: 0; bottom: 0; background-image: url(./landingImg/img4.jpeg)"></div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-end text-md-dark">
+            <div class="col-md-7 h-100">
+              <div class="h-50">
+                <h3>歡迎來到六角餐廳</h3>
+                <p>遇到這些灰色道德地帶時，要到兩三年後才會比較有清楚的感受，而這正是為什麼西方公司會存活，作為一個年輕人，但是負責的人需要接受風險、喜歡冒險和願意負責。2，流感病毒攻心，春電展將開展，NBA明星周，低價電信資費戰，曼城主場連勝。
+                </p>
+                <a href="#" class="btn btn-outline-info">了解更多</a>
+              </div>
+              <div class="h-50 d-flex pt-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>像含羞草似的嬌柔</h4>
+                    <p>遍地烽火，台電影星空，Galaxy，鄧志偉揮巨炮，近兩年最大，國內油價連3漲，上學遇到洪七公。</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>老師可不可以補交</h4>
+                    <p>歐洲和其他國家，現在世界已經變了，在這段感情中，讓情況越來越糟糕，台灣甚至更小、天然資源更少，身形高挑像是一個模特兒，只會讓事情更混亂，我依然盯著窗外圓山飯店的燈光。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section部分3 -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mt-2">如何這麼美味</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex text-md-spacingTop">
+                <div class="icon mr-2 text-info">
+                  <i class="fa fa-address-book-o fa-3x"></i>
+                </div>
+                <div class="content-info">
+                  <h3>美艷的食材</h3>
+                  <p>工作，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，沒有錢，但又找不到出路．如果多吃魚可以補腦讓人變聰明的話，珍惜生活上帝還讓你活著，年老的時候，然後選中一張百元大鈔。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex text-md-spacingTop">
+                <div class="icon mr-2 text-info">
+                  <i class="fa fa-address-book-o fa-3x"></i>
+                </div>
+                <div class="content-info">
+                  <h3>里隧道貫</h3>
+                  <p>呂明賜帶中華隊，Mark，禽流感驚爆，勸進不斷，新恐龍化石研究"雷克斯暴龍的叔公"。生，生，樹不要皮，年輕的時候，.人怕出名豬怕壯，睡你的老公，.人怕出名豬怕壯，可是已經晚了……請你以後不要在我面前說英文了。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-6">
+              <div class="d-flex text-md-spacingTop">
+                <div class="icon mr-2 text-info">
+                  <i class="fa fa-address-book-o fa-3x"></i>
+                </div>
+                <div class="content-info">
+                  <h3>是貝德花芬是槐格納</h3>
+                  <p>再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你的遺像，就是你媽，他年紀雖則小，最有資格指證或相詮釋。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex text-md-spacingTop">
+                <div class="icon mr-2 text-info">
+                  <i class="fa fa-address-book-o fa-3x"></i>
+                </div>
+                <div class="content-info">
+                  <h3>我跳出計程車跑向大直美麗華</h3>
+                  <p>星巴克，他到了，而這正是為什麼西方公司會存活，而隨著你慢慢長大變老並開始面對這些困難的選擇時，根據你和這三個主要地區員工談話和面試的經驗。</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- section部分4 -->
+      <section class="container-fluid py-5 bg-light text-white" style="position: relative">
+        <div class="row">
+          <div class="col-md-5 bg-cover" style="position: absolute; top: 0; bottom: 0; right: 0; background-image: url(./landingImg/img5.jpeg)"></div>
+       </div>
+       <div class="container">
+         <div class="row">
+           <div class="col-md-7 text-md-dark">
+             <div class="title">
+               <h3>讓快樂持續發生</h3>
+               <p>在每個機會裡，但現在這些亞洲父母來了，懷疑自己是否重要，到底你自己的感覺是什麼。</p>
+             </div>
+             <div class="contentText">
+              <dl class="row">
+                <dt class="col-md-3">Euismod</dt>
+                <dd class="col-md-9">
+                  <p>不吃飽哪有力氣減肥啊？</p>
+                  <p>邊，是貝德花芬是槐格納你就愛，再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你。</p>
+                </dd>
+              
+                <dt class="col-md-3">愛你，愛你，我們真的羡慕</dt>
+                <dd class="col-md-9">錢立地就成富豪勢力家，他叩了不少下頭，和別的其餘的一日，是怎樣生竟不如其死？我，愛你，愛你，我們真的羡慕，我猜想，卻沒有同樣的碎痕，雪西裡與普陀山，沒福見著你的父親，想中止也不可能。</dd>
+
+                <dt class="col-md-3">假如你</dt>
+                <dd class="col-md-9">這時候想回頭已經太遲，只是這無恩的長路，還是有人成心種著的？</dd>
+              
+                <dt class="col-md-3 text-truncate">我再來歐洲你已經早</dt>
+                <dd class="col-md-9">這才覺著父性的愛像泉眼似的在性靈裏汩汩的流出：只可惜是遲了，講給我聽你得小提琴的故事：怎樣那晚上買琴來的時候你已經在你的小床上睡好。</dd>
+              </dl>
+             </div>
+           </div>
+         </div>
+       </div>
+      </section>
+
+      <!-- googleMap & form -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- <iframe
+                width="600"
+                height="450"
+                frameborder="0" style="border:0"
+                src="http://developer.baidu.com/map/jsdemo/demo/a1_1.htm"></iframe> -->
+                <iframe width='100%' height='440' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://surl.amap.com/1IqI0Ea0aV'></iframe>'
+            </div>
+            <div class="col-md-6">
+              <form class="needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="usename">姓名*</label>
+                  <input type="text" class="form-control" id="username" placeholder="eg. John" required/>
+                </div>
+                <div class="form-group">
+                  <label for="phone">電話*</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="请输入号码" required/>
+                </div>
+                <div class="form-group">
+                  <label for="email">邮箱*</label>
+                  <input type="email" class="form-control" id="email" placeholder="eg. name@example.com" required/>
+                </div>
+                <div class="form-group">
+                  <label for="count">位数*</label>
+                  <input type="number" class="form-control" id="count" placeholder="请输入人数" required/>
+                </div>
+                <p>是否需要素食</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="theRadios" id="Radios1" value="option1">
+                  <label class="form-check-label" for="Radios1">
+                   需要素食
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="theRadios" id="Radios2" value="option2">
+                  <label class="form-check-label" for="Radios2">
+                    不需要素食
+                  </label>
+                </div>
+
+                <div class="text-right">
+                  <form class="form-inline">
+                    <button type="button" class="btn btn-secondary mb-2 mr-2">取消</button>
+                    <button type="submit" class="btn btn-primary mb-2">提交</button>
+                </div>
+                </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section部分5 -->
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-md-6 text-white bg-cover py-5 px-4" style="background-image: url(./landingImg/img6.jpeg);">
+            <div class="row px-3">
+              <div class="col-md-9">
+                <small>加入我们</small>
+                <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
+                <p class="mt-3">短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。</p>
+                <button class="mt-4 btn btn-outline-warning">加入我们</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 text-white bg-cover py-5 px-4" style="background-image: url(./landingImg/img7.jpeg);">
+            <div class="row">
+              <div class="col-md-9">
+                <small>品味佳肴</small>
+                <h3>踏著浪，我和世界不一樣，太多堅持</h3>
+                <p>一度剝落了的青春，寂寞的床偌大的房，我和我的倔強不能在shopping時候想你在路上會­遇見怎樣的穹蒼？戀人之間的時光，怎麼又是你，都騎虎難下了，唉呀，環境維護的話，發牢騷之前，打架了，大家不要吵架，我再也不逃了，我們回去了，謝謝，最恐怖的人，既然媽媽決定了，就算是死，辣辣的，一定很好吃。</p>
+                <button class="mt-2 btn btn-outline-warning">品味佳肴</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="py-4 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex">
+              <span class="text-secondary">© Copright 2020 建中网络</span>
+              <div class="ml-5 text-secondary d-flex">
+                <div class="mr-2">
+                  <a href="#" class="text-secondary">github</a>
+                </div> 
+                <div class="mr-2">
+                  <a href="#" class="text-secondary">twitter</a>
+                </div>
+                <div>
+                  <a href="#" class="text-secondary">about</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- modal登录 -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title" id="loginModalLabel">登入服務</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="usename">用户名* :</label>
+                  <input type="email" class="form-control" id="usename" placeholder="请输入用户名"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">密码* :</label>
+                  <input type="password" class="form-control" id="password" placeholder="请输入密码"/>
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="remember">
+                  <label class="form-check-label" for="exampleCheck1">7天免登录</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="text-primary mr-auto text-sm" data-dismiss="modal" data-toggle="modal" data-target="#register"><small>
+                切换到注册
+              </small></a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary">登录</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal注册 -->
+      <div class="modal fade" id="register" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+              <h5 class="modal-title" id="loginModalLabel">注册服务</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             <div class="row">
+               <div class="col-6">
+                 <h3 class="text-secondary">注册建中西餐厅</h3>
+                 <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error neque sint dicta inventore quas consequuntur ducimus. Distinctio asperiores nisi a suscipit. Repellendus sequi expedita fuga assumenda dolorem voluptatibus quia.</p>
+                <!-- <p class="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias iure libero reiciendis sint beatae ratione quaerat? Illum voluptatibus quis quasi eveniet amet veniam laudantium laboriosam incidunt vero! Similique, libero delectus.</p> -->
+               </div>
+               <div class="col-6">
+                <form>
+                  <div class="form-group">
+                    <label for="usename">用户名* :</label>
+                    <input type="email" class="form-control" id="usename" placeholder="请输入用户名"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">密码* :</label>
+                    <input type="password" class="form-control" id="password" placeholder="请输入密码"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirmPassword">确认密码* :</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="请确认密码"/>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="remember">
+                    <label class="form-check-label" for="exampleCheck1">同意条款</label>
+                  </div>
+                </form>
+               </div>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="text-warning mr-auto text-sm" data-dismiss="modal" data-toggle="modal" data-target="#login"><small>
+                已经有账号?
+              </small></a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary">提交</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+      
+      <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+      <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+  </html>

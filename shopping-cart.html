@@ -1,0 +1,241 @@
+<!--
+ * @Author: hhhhhq
+ * @Date: 2020-07-05 10:24:58
+ * @LastEditors: hhhhhq
+ * @LastEditTime: 2020-07-05 19:49:27
+ * @Description: file content
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./custom.css">
+  <title>shopping-cart</title>
+</head>
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <i class="fa fa-heart text-info"></i>
+      建中购物商场
+    </a>
+
+    <div class="dropdown ml-auto">
+      <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+        <i class="fa fa-shopping-cart fa-2x"></i>
+        <span class="badge badge-pill badge-danger">12</span>
+      </button>
+
+      <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px">
+        <div class="px-4 py-3">
+          <h6>已选择商品</h6>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  <a class="text-muted" href="#removeModal" data-toggle="modal">
+                    <i class="fa fa-trash-o fa-1x"></i>
+                  </a>
+                </td>
+                <td class="align-middle">金派西装</td>
+                <td class="align-middle">1件</td>
+                <td class="align-middle text-right"><strong>$520</strong></td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="text-muted" href="#removeModal" data-toggle="modal">
+                    <i class="fa fa-trash-o fa-1x"></i>
+                  </a>
+                </td>
+                <td class="align-middle">金派女装</td>
+                <td class="align-middle">1件</td>
+                <td class="align-middle text-right"><strong>$480</strong></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button class="btn btn-primary btn-block">去结算</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 巨幕 -->
+  <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+    <div class="container container-bg">
+      <div class="bg-lightter py-3 px-4">
+        <h1 class="display-2 font-weight-bold">買到剁手手！最後出清</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- section1 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group sticky-top">
+          <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home">
+            <i class="fa fa-pencil fa-fw"></i>
+            金牌專賣店
+          </a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile">
+            <i class="fa fa-home fa-fw"></i>
+            禮品區
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa fa-book fa-fw"></i>
+            影音商品
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa fa-spinner fa-spin fa-fw"></i>
+            寵物專用
+          </a>
+          <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1">
+            <i class="fa fa-cog fa-fw"></i>
+            居家環境
+          </a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="tab-content">
+          <div class="tab-pane active"  id="home">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card border-0 h-100 box-shadow">
+                  <img src="./shopping-cart-img/img2.jpeg" class="card-img-top" alt="img">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">金牌西裝</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white text-center">
+                    <div class="btn-group btn-group-sm" role="group">
+                      <button type="button" class="btn btn-outline-secondary">XS</button>
+                      <button type="button" class="btn btn-outline-secondary">S</button>
+                      <button type="button" class="btn btn-outline-secondary">M</button>
+                      <button type="button" class="btn btn-outline-secondary">L</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card border-0 h-100 box-shadow">
+                  <img src="./shopping-cart-img/img3.jpeg" class="card-img-top" alt="img">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">金牌西裝</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white text-center">
+                    <div class="btn-group btn-group-sm" role="group">
+                      <button type="button" class="btn btn-outline-secondary">XS</button>
+                      <button type="button" class="btn btn-outline-secondary">S</button>
+                      <button type="button" class="btn btn-outline-secondary disabled">M</button>
+                      <button type="button" class="btn btn-outline-secondary">L</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card border-0 h-100 box-shadow">
+                  <img src="./shopping-cart-img/img4.jpeg" class="card-img-top" alt="img">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">金牌西裝</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white text-center">
+                    <div class="btn-group btn-group-sm" role="group">
+                      <button type="button" class="btn btn-outline-secondary">XS</button>
+                      <button type="button" class="btn btn-outline-secondary">S</button>
+                      <button type="button" class="btn btn-outline-secondary">M</button>
+                      <button type="button" class="btn btn-outline-secondary">L</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card border-0 h-100 box-shadow">
+                  <img src="./shopping-cart-img/img5.jpeg" class="card-img-top" alt="img">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">金牌西裝</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white text-center">
+                    <button type="button" class="btn btn-block btn-outline-secondary">抢购中</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card border-0 h-100 box-shadow">
+                  <img src="./shopping-cart-img/img6.jpeg" class="card-img-top" alt="img">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">金牌西裝</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white text-center">
+                    <button type="button" class="btn btn-block btn-outline-secondary disabled">缺货中</button>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="tab-pane" id="profile">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card border-0 h-100 box-shadow">
+                  <img src="./shopping-cart-img/img8.jpeg" class="card-img-top" alt="img">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">金牌西裝</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 bg-white text-center">
+                    <div class="btn-group btn-group-sm" role="group">
+                      <button type="button" class="btn btn-outline-secondary">XS</button>
+                      <button type="button" class="btn btn-outline-secondary">S</button>
+                      <button type="button" class="btn btn-outline-secondary disabled">M</button>
+                      <button type="button" class="btn btn-outline-secondary">L</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-light text-muted py-5">
+    <div class="container">
+      <ul class="list-inline text-center">
+        <li class="list-inline-item">© Copright 2020 建中购物商场</li>
+        <li class="list-inline-item">
+          <a href="#" class="text-link text-info">
+            <i class="fa fa-instagram fa-1x"></i>
+            Instagrame
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-link text-info">
+            <i class="fa fa-facebook-square fa-1x"></i>
+            Facebook
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-link text-info">About</a>
+        </li>
+      </ul>
+      <div class="text-center">
+        Made with Bootstrap4
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

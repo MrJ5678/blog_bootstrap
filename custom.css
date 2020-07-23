@@ -1,0 +1,38 @@
+
+html {
+  font-size: 14px;
+}
+.btn-cart {
+  position: relative;
+  background-color: transparent;
+}
+
+.btn-cart .badge {
+  position: absolute;
+  top: -1;
+  right: -1;
+}
+
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+
+.jumbotron-bg {
+  background-image: url(./shopping-cart-img/img1.jpeg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+}
+
+.bg-lightter {
+  background-color: rgba(255, 255, 255, .45);
+}
+
+.box-shadow {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .05);
+  transition: box-shadow .3s;
+}
+.box-shadow:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+}

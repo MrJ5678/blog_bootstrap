@@ -1,0 +1,199 @@
+<!--
+ * @Author: hhhhhq
+ * @Date: 2020-07-02 09:45:36
+ * @LastEditors: hhhhhq
+ * @LastEditTime: 2020-07-02 16:36:16
+ * @Description: file content
+--> 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>blog</title>
+    <style>
+      .breadcrumb {
+        background-color: transparent;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      a, a:hover {
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        .tags {
+          margin-top: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-diamond" aria-hidden="true"></i>
+        建中部落格
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">
+            <i class="fa fa-h-square" aria-hidden="true"></i>
+            Home
+          </a>
+          <a class="nav-item nav-link" href="#">
+            <i class="fa fa-rss-square" aria-hidden="true"></i>
+            Blog
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- breadCrumb -->
+      <ol class="breadcrumb pl-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Article</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Summary</li>
+      </ol>
+
+      <!-- main -->
+      <h1 class="text-primary">Bootstrap 使用</h1>
+      <div class="row">
+        <!-- 左侧 上部-->
+        <div class="col-md-8">
+          <div class="my-2 text-secondary">
+            <small>
+              <span class="mr-3">
+                <i class="fa fa-user"></i>
+                Jld
+              </span>
+              <span class="mr-3">2020/07/02</span>
+              <span class="mr-3">
+                <i class="fa fa-tag"></i>
+                <a href="#" class="text-link">
+                 event
+                </a>
+              </span>
+            </small>
+          </div>
+          <article>
+            <p>
+              Bootstrap 是目前最主流的 CSS 框架，由於他包含了大量的元件以及具有良好的架構，在實際運用及擴增也都是非常容易，也越來越多開發者協同一起開發 (Github 上有超過 10 萬個 Star)。如今第四版 Beta (Bootstrap 4 Beta) 也在 2017/8/10 釋出，我們先來看看他有什麼樣的改變吧！
+            </p>
+            <h2 class="text-muted">Bootstrap 4 的特色</h2>
+
+            <p>
+              Bootstrap 4 Beta 經過了 Alpha 六個版本的歷練，重新翻修了大量元件以及加入許多新的元素，如果你沒有用過 Alpha 的任何版本，提供了以下摘要讓您快速了解第四版有什麼新新聞：
+              <ul>
+                <li class="mt-2">
+                  從 Less 到 Sass: 自從 Sass 不在只能使用 Ruby 編譯後，Libsass 有更快的編譯效率，加上 Sass 本身具有龐大的開發社群，所以 Bootstrap 從 Less 改用 Sass 囉！
+                </li>
+                <li class="mt-2">
+                  Flexbox 以及強化的網格系統: 網格系統不在使用 <code>float</code>，進而改用<code>flexbox</code>，讓行動裝置及桌面裝置有更彈性的排版方法。
+                </li>
+                <li class="mt-2">
+                  彈性更高的變數: 以往的樣式都是固定的名稱、色彩，透過 Sass <code>$map</code> 變數可以更有彈性的調整、新增、減少不同的品牌色彩、陰影等視覺效果。
+                </li>
+              </ul>
+              <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Fbootstrap4.png?alt=media&token=0b014ac6-b99b-46e7-8336-3fbfda1da3c2" alt="img">
+            </p>
+        </article>
+
+          <!-- 左侧 下部留言 -->
+          <div class="card">
+            <div class="card-header">
+              留言回复
+            </div>
+            <div class="card-body">
+              <div class="media mb-5">
+                <img src="https://randomuser.me/api/portraits/lego/1.jpg" width="64" height="64" class="mr-3" alt="img-user">
+                <div class="media-body">
+                  <div class="form-group">
+                    <label for="textarea" class="text-info">建中留言</label>
+                    <textarea class="form-control" id="textarea" rows="3" placeholder="what i want to say ..."></textarea>
+                    <button type="button" class="btn btn-light btn-block mt-2">Submit form</button>
+                  </div>
+                </div>
+              </div>
+              <div class="media mb-5">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" width="64" height="64" class="mr-3" alt="img-user">
+                <div class="media-body">
+                  <h5 class="mt-0">Media heading</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+              <div class="media mb-5">
+                <img src="https://randomuser.me/api/portraits/women/6.jpg" width="64" height="64" class="mr-3" alt="img-user">
+                <div class="media-body">
+                  <h5 class="mt-0">Media heading</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+              <div class="media mb-2">
+                <img src="https://randomuser.me/api/portraits/women/17.jpg" width="64" height="64" class="mr-3" alt="img-user">
+                <div class="media-body">
+                  <h5 class="mt-0">Media heading</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧 标签部分 -->
+        <div class=" tags col-md-4">
+          <h2 class="text-secondary">Tags</h2>
+          <a href="#" class="badge badge-info">
+            <i class="fa fa-tag"></i>
+            Info
+          </a>
+          <a href="#" class="badge badge-info">
+            <i class="fa fa-tag"></i>
+            Bootstrap
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-light py-5 mt-3">
+      <div class="container text-secondary">
+        <div class="d-flex justify-content-between">
+          <div class="text">
+            © Copright 2020 建中部落格
+          </div>
+          <div class="link">
+            <a href="#" class="text-secondary">
+              <i class="fa fa-qq mr-2"></i>
+            </a>
+            <a href="#" class="text-secondary">
+              <i class="fa fa-weibo mr-2"></i>
+            </a>
+            <a href="#" class="text-secondary">
+              <i class="fa fa-weixin mr-2"></i>
+            </a>
+            <a href="#" class="text-secondary">
+              <i class="fa fa-instagram mr-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+      
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

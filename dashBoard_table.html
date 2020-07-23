@@ -1,0 +1,270 @@
+<!--
+ * @Author: hhhhhq
+ * @Date: 2020-07-03 17:06:43
+ * @LastEditors: hhhhhq
+ * @LastEditTime: 2020-07-04 17:16:47
+ * @Description: file content
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./all.css">
+  <title>dashBoard_table</title>
+  <style>
+    a, a:hover {
+      text-decoration: none;
+    }
+
+    /* .dropdown-menu a:hover {
+      background-color: #666;
+      color: #666;
+    } */
+
+    .table td, .table th {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <!-- navBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">商務控制後台</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="./dashBoard_index.html">首页</a>
+        <a class="nav-item nav-link active" href="./dashBoard_table.html">列表</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <div class="container-fluid mt-3 main">
+    <!-- section1 -->
+    <div class="form-inline">
+      <div class="input-group mb-3 mr-auto">
+        <input type="text" class="form-control form-control-sm" placeholder="Search...">
+        <div class="input-group-append">
+          <button class="btn btn-secondary btn-sm" type="button" id="button-addon2" data-toggle="tooltip" data-placement="top" data-html="true" title="<em>按下go快速搜寻</em>">Go!</button>
+        </div>
+      </div>
+      <div class="mb-3">
+        <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-title="快速下单" data-target="#editModal">
+          <i class="fa fa-shopping-cart fa-x"></i>
+          快速下单
+        </a>
+      </div>
+    </div>
+
+    <!-- section2 -->
+    <div class="table-responsive-lg">
+      <table class="table table-hover mb-0">
+        <thead>
+          <tr>
+            <th width="30">#</th>
+            <th>品項</th>
+            <th width="150">Name</th>
+            <th width="200">Email</th>
+            <th width="100">狀態</th>
+            <th class="text-right" width="150">金額</th>
+            <th class="text-center">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>
+              <a href="#" class="text-link">超纖細肥皂 1盒</a>
+              </td>
+            <td>
+              Otto
+              <span class="badge badge-pill badge-danger">新客</span>
+            </td>
+            <td>@Mark@mail.com</td>
+            <td>已出貨</td>
+            <td class="text-right">NT$ 899</td>
+            <td class="text-center">
+              <div class="btn-group btn-group-sm" role="group">
+                <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-title="编辑 超纖細肥皂 1盒" data-target="#editModal" data-backdrop="static">编辑</button>
+                <button type="button" class="btn btn-outline-secondary">查看</button>
+              
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item text-center" href="#">操作1</a>
+                  <a class="dropdown-item text-center" href="#">操作2</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger text-center" href="#">删除订单</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table-danger">
+            <th>2</th>
+            <td><a href="#" class="text-link">(保證)無泡泡沐浴乳 5罐</a></td>
+            <td>
+              Thornton
+              <span class="badge badge-pill badge-success">老客</span>
+            </td>
+            <td>thorn@mail.com</td>
+            <td class="text-danger">缺貨</td>
+            <td class="text-right">NT$ 3,600</td>
+            <td class="text-center">
+              <div class="btn-group btn-group-sm" role="group">
+                <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-title="编辑 (保證)無泡泡沐浴乳 5罐" data-target="#editModal" data-backdrop="static">编辑</button>
+                <button type="button" class="btn btn-outline-secondary">查看</button>
+              
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item text-center" href="#">操作1</a>
+                  <a class="dropdown-item text-center" href="#">操作2</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger text-center" href="#">删除订单</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td><a href="#" class="text-link">防滑燈罩 100個</a></td>
+            <td>the Bird</td>
+            <td>@Larry@mail.com</td>
+            <td>已出貨</td>
+            <td class="text-right">NT$ 14,060</td>
+            <td class="text-center">
+              <div class="btn-group btn-group-sm" role="group">
+                <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-title="编辑 防滑燈罩 100個" data-target="#editModal" data-backdrop="static">编辑</button>
+                <button type="button" class="btn btn-outline-secondary">查看</button>
+              
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item text-center" href="#">操作1</a>
+                  <a class="dropdown-item text-center" href="#">操作2</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger text-center" data-toggle="modal" data-title="防滑燈罩 100個" data-target="#removeModal" data-backdrop="static" href="#">删除订单</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="7">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th colspan="7">...</th>
+          </tr>
+          <tr>
+            <th colspan="7">...</th>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+    <!-- 分页 -->
+    <div >
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="mt-5 py-3 bg-light text-center text-secondary">
+    建中网络后台管理系统
+  </footer>
+
+<!-- Modal1 -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div class="modal fade" id="removeModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-danger">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+  
+      // 編輯的 Modal 事件
+      $('#editModal').on('show.bs.modal', (event) => {
+        let btn = $(event.relatedTarget) 
+        let title = btn.data('title')
+        let modal = $(this)
+        modal.find('.modal-title').text(title)
+      });
+  
+      $('#removeModal').on('show.bs.modal', function (event) {
+        let btn = $(event.relatedTarget) 
+        let title = btn.data('title')
+        let modal = $(this)
+        modal.find('.modal-title').text(`删除订单 ${title}`)
+      })
+    });
+  </script>
+</body>
+</html>
